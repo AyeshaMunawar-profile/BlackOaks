@@ -1,23 +1,28 @@
-@media only screen and (min-width: 992px){
-    .account-menu{
-        transform: translateX(-100px);
-    }
-}
-
-*{
+:root{
+    --secondary-color: #ffc107;
+    --grey-500: #6c757d;
+    --grey-900: #181818;
+    --grey-700: #262626;
+    --black: #000000;
     font-family: Lato, "Lato Hairline", Arial, sans-serif; !important;
+    color: var(--grey-900);
 }
 
-.text-lato{
-    font-family: Lato, "Lato Hairline", Arial, sans-serif; !important;
-}
 
+/*Drop down Menu*/
+.dropdown-item:active{
+    background-color: var(--secondary-color);
+    color: var(--grey-900);
+}
+.dropdown-item i{
+    width: 10px;
+}
 .account-menu i{
     margin-right: 10px;
+    color: var(--grey-500);
+    font-size: 1em;
 }
-.margin-right-10{
-    margin-right: 10px;
-}
+/*icons formatting*/
 .fa-stack[data-count]:after{
     position:absolute;
     right:-10%;
@@ -32,10 +37,43 @@
     font-weight:bold;
     background: white;
     border-style:solid;
+    color: #ffc107;
 }
-.fa-stack{
+.main-menu-button{
+    margin-right: 8px;
+}
+.fa-circle:link,
+.fa-circle:visited{
+    color: var(--grey-500);
+}
+.fa-circle:hover
+{
+    color: var(--grey-900);
+}
+.fa-circle:active{
+    color: var(--secondary-color);
+}
+.form-control:focus{
+    border-color: var(--secondary-color);
+    box-shadow: 0px 1px 1px rgba(255, 193, 7, 0.05) inset, 0px 0px 8px rgba(255, 193, 7, 0.5);
+}
+
+/*margins and padding */
+.margin-right-10{
     margin-right: 10px;
 }
-.fa-circle {
-    color:rgba(0,0,0,.55);
+.margin-left-10{
+    margin-left: 10px;
+}
+.margin-left-5{
+    margin-left: 5px;
+}
+.margin-right-5{
+    margin-right: 5px;
+}
+/*Media queries */
+@media only screen and (min-width: 992px){
+    .account-menu{
+        transform: translateX(-125px);
+    }
 }
