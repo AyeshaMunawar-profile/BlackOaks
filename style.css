@@ -1,0 +1,41 @@
+@media only screen and (min-width: 992px){
+    .account-menu{
+        transform: translateX(-100px);
+    }
+}
+
+*{
+    font-family: Lato, "Lato Hairline", Arial, sans-serif; !important;
+}
+
+.text-lato{
+    font-family: Lato, "Lato Hairline", Arial, sans-serif; !important;
+}
+
+.account-menu i{
+    margin-right: 10px;
+}
+.margin-right-10{
+    margin-right: 10px;
+}
+.fa-stack[data-count]:after{
+    position:absolute;
+    right:-10%;
+    top:-10%;
+    content: attr(data-count);
+    font-size:50%;
+    padding:.6em;
+    border-radius:999px;
+    line-height:.75em;
+    text-align:center;
+    min-width:2em;
+    font-weight:bold;
+    background: white;
+    border-style:solid;
+}
+.fa-stack{
+    margin-right: 10px;
+}
+.fa-circle {
+    color:rgba(0,0,0,.55);
+}
