@@ -9,44 +9,85 @@
           rel="stylesheet"
           integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
           crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+          integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <div class="home-nav-bar">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="res/Logo/Black%20Oaks%20.png" alt="Black Oaks Logo" width="80" height="auto" class="d-inline-block align-centre">
+                <img src="res/Logo/Black%20Oaks%20.png" alt="Black Oaks Logo" width="80" height="auto"
+                     class="d-inline-block align-centre">
                 <span>Black Oaks</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <div class="collapse navbar-collapse d-lg-flex flex-lg-row justify-content-lg-between"
+                 id="navbarSupportedContent">
+                <div></div>
+                <form class="d-flex col-lg-6">
+                    <input class="form-control me-2" type="search" placeholder="Search for products"
+                           aria-label="Search">
+                    <button class="btn btn-warning" type="submit"> Search</button>
+                </form>
+                <ul class="navbar-nav mb-2 mt-2 mb-lg-0 mt-lg-0 ">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active text-grey-800 text-lato" aria-current="page" href="#">
+                            <span class="fa-stack fa-1x  ">
+                                 <i class="fas fa-circle mr-5 fa-circle fa-stack-2x "></i>
+                                <i class="fa fa-home fa-stack-1x  mr-5 text-light"></i>
+                            </span>
+                            <span class=" d-lg-none">Home Page</span>
+                            </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link text-grey-800 text-lato" href="#"><span class="fa-stack fa-1x has-badge" data-count="5">
+                                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                                     <i class="fa fa-shopping-cart fa-stack-1x  mr-5 text-light"></i>
+                                                    </span>
+                            <span class=" d-lg-none">My Cart</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-grey-900 text-lato" href="#">
+                            <span class="fa-stack fa-1x has-badge " data-count="6">
+                                 <i class="fas fa-circle mr-5 fa-circle fa-stack-2x "></i>
+                                <i class="fa fa-heart fa-stack-1x  mr-5 text-light"></i>
+                            </span>
+                            <span class=" d-lg-none">My Wishlist</span>
+
+                        </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
+                        <a class="nav-link dropdown-toggle text-grey-900 text-lato" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="fa-stack fa-1x  ">
+                                 <i class="fas fa-circle mr-5 fa-circle fa-stack-2x "></i>
+                                <i class="fa fa-user fa-stack-1x  mr-5 text-light"></i>
+                            </span>
+                            <span class=" d-lg-none">My Account</span>
+
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <ul class="dropdown-menu account-menu text-grey-900 " aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-lato" href="#"> <i class="fas fa-scroll"></i>Orders</a></li>
+                            <li><a class="dropdown-item text-lato" href="#"> <i class="fas fa-user"></i>Profile</a></li>
+                            <li><a class="dropdown-item text-lato" href="#"><i class="fas fa-map-pin"></i> Change Address</a></li>
+                            <li><a class="dropdown-item text-lato" href="#"> <i class="fas fa-key"></i>Change Password</a></li>
+                            <li><a class="dropdown-item text-lato" href="#"><i class="fas fa-tags"></i> Discounts</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"> <i class="fas fa-sign-out-alt"></i>Logout</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
+                    <li class="pt-1" > <button class="btn btn-warning container-fluid" type="submit"><i class="fas fa-user-plus margin-right-10"></i> Sign Up</button> </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+
             </div>
         </div>
     </nav>
