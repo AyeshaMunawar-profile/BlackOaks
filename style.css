@@ -1,8 +1,9 @@
 :root{
     --secondary-color: #ffc107;
     --grey-500: #6c757d;
+    --grey-700: #474e55;
     --grey-900: #181818;
-    --grey-700: #262626;
+    --grey-800: #262626;
     --black: #000000;
     font-family: Lato, "Lato Hairline", Arial, sans-serif; !important;
     color: var(--grey-900);
@@ -10,7 +11,7 @@
 
 /*home-top-banner*/
 .home-top-banner{
-    background-color: var(--grey-900);
+    background-color: var(--grey-700);
     color: white;
     text-align: center;
 }
