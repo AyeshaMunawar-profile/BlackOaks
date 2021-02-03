@@ -5,6 +5,7 @@
     --grey-900: #181818;
     --grey-800: #262626;
     --black: #000000;
+    --light: #f8f9fa;
     font-family: Lato, "Lato Hairline", Arial, sans-serif; !important;
     color: var(--grey-900);
 }
@@ -29,6 +30,31 @@
     margin-right: 10px;
     color: var(--grey-500);
     font-size: 1em;
+}
+.category-name-link {
+    margin-bottom: 2px;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--grey-900);
+    background-color: transparent;
+}
+.category-name-link:focus,
+.category-name-link:hover{
+    color: var(--grey-900);
+}
+.category-item-link{
+    text-decoration: none;
+    color: var(--grey-900);
+}
+.category-item-link:focus,
+.category-item-link:hover{
+    color: var(--grey-900);
+}
+.dropdown-menu .category-name:hover,
+.dropdown-menu .category-name:focus{
+    background-color: var(--light);
+    color: var(--grey-900);
 }
 /*icons formatting*/
 .fa-stack[data-count]:after{
