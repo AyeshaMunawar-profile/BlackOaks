@@ -17,6 +17,7 @@
 }
 
 /*Drop down Menu*/
+
 .dropdown-item:active{
     background-color: var(--secondary-color);
     color: var(--grey-900);
@@ -83,4 +84,18 @@
     .account-menu{
         transform: translateX(-125px);
     }
+}
+@media (max-width: 992px) {
+    .top-main-menu{
+        margin-top: 10px;
+    }
+}
+
+/*general text properties*/
+.btn-link {
+    border: none;
+    text-decoration: none;!important
+}
+.btn:focus {
+    box-shadow: none; !important;
 }

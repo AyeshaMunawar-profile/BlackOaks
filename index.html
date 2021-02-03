@@ -18,7 +18,7 @@
 <div class="home-nav-bar">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#" data-toggle="tooltip" data-placement="bottom" title="Product Categories">
                 <img src="res/Logo/Black%20Oaks1.png" alt="Black Oaks Logo" width="80" height="auto"
                      class="d-inline-block align-centre">
                 <span>Black Oaks</span></a>
@@ -28,7 +28,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse d-lg-flex flex-lg-row justify-content-lg-between"
+            <div class="collapse navbar-collapse d-lg-flex flex-lg-row justify-content-lg-between top-main-menu"
                  id="navbarSupportedContent">
                 <div></div>
                 <form class="d-flex col-lg-6">
@@ -104,11 +104,37 @@
             </div>
         </div>
     </nav>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark mb-0 mt-0 pt-lg-0 pb-lg-0 ">
-        <div class="container-fluid d-flex flex-row justify-content-center">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark mb-0 mt-0 pt-lg-0 pb-lg-0 d-none d-xl-block ">
+        <div class="container-fluid d-flex flex-row justify-content-center flex-wrap align-items-center ">
             <ul class="nav navbar-nav mb-lg-0 mt-lg-0 ">
-                <li class="nav-item margin-left-10 margin-right-10 mt-2 mb-2">
-                    <a class="nav-link text-light" href="#">Furniture</a>
+                <li class="dropdown nav-item margin-left-10 margin-right-10 mt-2 mb-2">
+                    <a class="btn btn-link dropdown-toggle text-light" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown link
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item margin-left-10 margin-right-10 mt-2 mb-2 dropdown show">
+                    <a type="button" class="btn btn-link nav-link text-light dropdown-toggle" href="#" role="button"
+                       id="furnituredropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Furniture</a>
+                    <div class="dropdown-menu" aria-labelledby="furnituredropdownMenuLink">
+                        <a class="dropdown-item" href="#">Sofas</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">One-Seater Sofas</a>
+                        <a class="dropdown-item" href="#">Two-Seater Sofas</a>
+                        <a class="dropdown-item" href="#">Three-Seater Sofas</a>
+                        <a class="dropdown-item" href="#">Deewan Sofas</a>
+                        <a class="dropdown-item" href="#">L-Shaped Sofas</a>
+                        <a class="dropdown-item" href="#">Leatherite Sofas</a>
+                        <a class="dropdown-item" href="#">Velvet Sofas</a>
+                        <a class="dropdown-item" href="#">Sofa Stools</a>
+                        <a class="dropdown-item" href="#">Sofa Cum Bed</a>
+                        <a class="dropdown-item" href="#">Rocking Chairs</a>
+                    </div>
                 </li>
                 <li class="nav-item margin-left-10 margin-right-10 mt-2 mb-2">
                     <a class="nav-link text-light"  href="#">Living Room</a>
@@ -124,6 +150,18 @@
                 </li>
                 <li class="nav-item margin-left-10 margin-right-10 mt-2 mb-2">
                     <a class="nav-link text-light"  href="#">Lightning</a>
+                </li>
+                <li class="nav-item margin-left-10 margin-right-10 mt-2 mb-2">
+                    <a class="nav-link text-light"  href="#">Kids</a>
+                </li>
+                <li class="nav-item margin-left-10 margin-right-10 mt-2 mb-2">
+                    <a class="nav-link text-light"  href="#">Outdoor</a>
+                </li>
+                <li class="nav-item margin-left-10 margin-right-10 mt-2 mb-2">
+                    <a class="nav-link text-light"  href="#">Office Furniture</a>
+                </li>
+                <li class="nav-item margin-left-10 margin-right-10 mt-2 mb-2">
+                    <a class="nav-link text-light"  href="#">Gym</a>
                 </li>
             </ul>
 
