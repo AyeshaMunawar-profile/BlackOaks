@@ -81,17 +81,11 @@
     min-width: 99vw;
 }
 .dropdown-menu-center{
-    margin-left: 50%;
-    margin-right: auto;
     padding-left: 10px;
     padding-right: 10px;
+    width: 100%;
 }
-.dropdown-menu-furniture{
-    transform: translate(-11%, 0);
-}
-.dropdown-menu-living-room{
-    transform: translate(-11%, 0);
-}
+
 .category-column{
     padding-right: 10px;
     padding-left: 0px;
