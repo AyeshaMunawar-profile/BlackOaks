@@ -153,7 +153,11 @@
         margin-top: 10px;
     }
 }
-
+.navbar-dropdown-btn:hover,
+.navbar-dropdown-btn:active,
+.navbar-dropdown-btn:focus{
+    color: var(--secondary-color) !important;
+}
 /*general text properties*/
 .btn-link {
     border: none;
